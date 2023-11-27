@@ -1,0 +1,125 @@
+body {
+    background-color: rgba(255, 0, 255, 0.25);
+}
+
+#casseven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.seven {
+    z-index: 3;
+    position: absolute;
+}
+
+.seven img {
+    max-width: 65px;
+    max-height: 65px;
+}
+
+.logo {
+    display: flex;
+    background-color: rgba(144, 212, 214, 0.75);
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    animation: spin 5s linear infinite;
+}
+
+.logo1 {
+        display: flex;
+        background-color: rgba(144, 212, 214, 0.75);
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        animation: spin1 5s linear infinite;
+}
+
+#loader img {
+    max-width: 100px;
+    min-width: 100px;
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+#loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: orbit 4s linear infinite; /* Adjust the duration and other properties as needed */
+}
+
+#loader1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit1 4s linear infinite;
+}
+
+#loader1 img {
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(90deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit1 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(90deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes loader1 {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
